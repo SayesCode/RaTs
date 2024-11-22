@@ -1,5 +1,6 @@
 from colorama import init, Fore, Style
-from termcolor import colored
+from modules.recon import perform_recon
+from modules.targeting import perform_targeting
 
 init(autoreset=True)
 
@@ -27,16 +28,33 @@ ascii_art = """
   ░▒ ░ ▒░  ▒   ▒▒ ░   ░    ░ ░▒  ░ ░
   ░░   ░   ░   ▒    ░      ░  ░  ░  
    ░           ░  ░              ░  
-By: github.com/SayesCode/RaTs
+
+   By: github.com/SayesCode/RaTs
 """
 
 def display_banner():
     print_gradient_text(ascii_art)
-    print(Fore.RED + "\nEscolha uma opção:")
+    print(Fore.RED + "\nChoose an option:")
     print(Fore.LIGHTGREEN_EX + "1. Recon")
     print(Fore.LIGHTGREEN_EX + "2. Targeting")
-    print(Fore.LIGHTGREEN_EX + "3. Sair")
+    print(Fore.LIGHTGREEN_EX + "3. Exit")
+
 
 if __name__ == "__main__":
-    display_banner()
-    choice = input(Fore.RED + "\nDigite o número da sua escolha: ")
+    while True:
+        try:
+            display_banner()
+            choice = input(Fore.RED + "\nEnter your choice number: ")
+
+            if choice == "1":
+                perform_recon()
+            elif choice == "2":
+                perform_targeting()
+            elif choice == "3":
+                print(Fore.LIGHTRED_EX + "Exiting...")
+                break
+            else:
+                print(Fore.LIGHTRED_EX + "Invalid choice, try again.")
+        except KeyboardInterrupt:
+            print(Fore.LIGHTRED_EX + "\nProgram interrupted. Exiting...")
+            break
