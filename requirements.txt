@@ -1,3 +1,6 @@
 colorama
 ipwhois
 scapy
+python-whois
+python-dotenv
+requests
