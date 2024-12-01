@@ -45,6 +45,6 @@ Sinta-se à vontade para abrir problemas ou enviar pull requests para melhorias.
 
 ## Licença
 
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+Distribuído sob a licença GPL-3.0 license. Veja `LICENSE` para mais informações.
 
 ---
