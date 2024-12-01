@@ -1,6 +1,6 @@
 # RaTs By SayesCode
 
-![RaTs ASCII Art](.github/assets/image.png) <!-- Substitua pela imagem real -->
+![RaTs ASCII Art](.github/assets/image.png) 
 
 **RaTs** é um sistema automatizado para tarefas de reconhecimento e direcionamento, com integração fácil de chaves API e funcionalidades interativas. Ele ajuda a validar números de telefone e e-mails por meio de APIs externas e oferece uma interface de linha de comando para execução fluida.
 
@@ -11,7 +11,6 @@
 - **Reconhecimento (Recon):** Executa tarefas detalhadas de reconhecimento.
 - **Direcionamento (Targeting):** Foco em alvos definidos.
 - **Validação Automática de Chaves:** Verifica e auxilia na configuração de chaves API.
-- **Interface CLI com Gradiente de Cor:** Banner interativo com design visual atraente.
 
 ---
 
@@ -20,7 +19,7 @@
 1. Certifique-se de ter o Python instalado (>= 3.8).
 2. Clone o repositório:
    ```bash
-   git clone https://github.com/SayesCode/RaTs.git
+   git clone https://github.com/SayesCode/RaTs.git && cd RaTs
    ```
 3. Instale as dependências:
    ```bash
